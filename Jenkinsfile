@@ -29,6 +29,7 @@ pipeline {
       
       steps {
         echo 'testing the app..'
+        sh 'mvn test'
       }
       
     }
@@ -37,6 +38,7 @@ pipeline {
       
       steps {
         echo 'deploying the app..'
+        sh 'mvn deploy'
       }
       
     }
