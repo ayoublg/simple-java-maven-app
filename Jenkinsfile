@@ -37,8 +37,8 @@ pipeline {
     stage("installing") {
       
       steps {
-        echo 'deploying the app..'
-        sh 'mvn deploy'
+        echo 'installing the app..'
+        sh 'mvn install'
       }
       
     }
